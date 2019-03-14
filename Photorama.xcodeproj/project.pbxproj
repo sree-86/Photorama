@@ -15,6 +15,7 @@
 		3015141C223B15AA000626D5 /* PhotoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3015141B223B15AA000626D5 /* PhotoramaTests.swift */; };
 		30151427223B15AA000626D5 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30151426223B15AA000626D5 /* PhotoramaUITests.swift */; };
 		30151435223B15BD000626D5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30151434223B15BD000626D5 /* PhotosViewController.swift */; };
+		30151437223B1839000626D5 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30151436223B1839000626D5 /* FlickrAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		30151426223B15AA000626D5 /* PhotoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITests.swift; sourceTree = "<group>"; };
 		30151428223B15AA000626D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30151434223B15BD000626D5 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		30151436223B1839000626D5 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				30151412223B15A9000626D5 /* Info.plist */,
 				3015140A223B15A8000626D5 /* Photorama.xcdatamodeld */,
 				30151434223B15BD000626D5 /* PhotosViewController.swift */,
+				30151436223B1839000626D5 /* FlickrAPI.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				30151435223B15BD000626D5 /* PhotosViewController.swift in Sources */,
 				30151404223B15A8000626D5 /* AppDelegate.swift in Sources */,
 				3015140C223B15A8000626D5 /* Photorama.xcdatamodeld in Sources */,
+				30151437223B1839000626D5 /* FlickrAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
