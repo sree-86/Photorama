@@ -37,7 +37,9 @@ class PhotoStore {
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
             let result = self.processPhotosRequest(data: data, error: error)
+            OperationQueue.main.addOperation{
             completion(result)
+            }
             if let jsonData = data {
                 do {
                     let jsonObject = try JSONSerialization.jsonObject(with: jsonData, options: [])
@@ -60,8 +62,13 @@ class PhotoStore {
         let request = URLRequest(url: photoURL)
         let task = session.dataTask(with: request) {
             (data, response, error) -> Void in
+            
+            let result = self.processImageRequest(data: data, error: error)
+            OperationQueue.main.addOperation{
+            completion(result)
+            }
         }
-        task. resume()
+        task.resume()
     }
     
     private func processImageRequest(data: Data?, error: Error?) -> ImageResult {
@@ -78,11 +85,11 @@ class PhotoStore {
         return .success (image)
     }
     
-    private func processPhotosRequest(data: Data?, error: Error?) -—> PhotosResult {
+    private func processPhotosRequest(data: Data?, error: Error?) -> PhotosResult {
     guard let jsonData = data else {
     return .failure(error!)
     }
-    return FlickrAPL.photos(fromJSON: jsonData)
+    return FlickrAPI.photos(fromJSON: jsonData)
     }
 }
 
