@@ -11,4 +11,13 @@ import UIKit
 
 class PhotosViewController: UIViewController{
     @IBOutlet var imageView: UIImageView!
+    var store: Photostore
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        store.fetchInterestingPhotos()
+    }
 }
+
+
