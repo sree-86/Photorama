@@ -7,13 +7,17 @@
 //
 
 import Foundation
-class PhotoDataSource: NSObject, UICollectionViewDataSource{
+import UIKit
+
+class PhotoDataSource: NSObject, UICollectionViewDataSource {
     
     var photos = [Photo]()
-    func collectionView( collectionView: UICollectionView, number0fItemsInSection section: Int) -> Int { return photos.count
+    func collectionView( _ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return photos.count
     }
-    func collectionView( collectionView: UICollectionView, cellForltemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let identifier = "UICollectionViewCell" let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath)
+    func collectionView( _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let identifier = "PhotoCollectionViewCell"
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! PhotoCollectionViewCell
         return cell
     }
 

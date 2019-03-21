@@ -21,21 +21,43 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-BK-FuF">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fTG-1h-Fmw">
-                                    <size key="itemSize" width="104" height="148"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="fTG-1h-Fmw">
+                                    <size key="itemSize" width="90" height="90"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="2" maxX="2" maxY="2"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UICollectionViewCell" id="R0a-w2-s3c">
-                                        <rect key="frame" x="0.0" y="0.0" width="104" height="148"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="R0a-w2-s3c" customClass="PhotoCollectionViewCell" customModule="Photorama" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="2" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="104" height="148"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fij-SN-tYf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                </imageView>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-jV-MUS">
+                                                    <rect key="frame" x="35" y="55" width="20" height="0.0"/>
+                                                </activityIndicatorView>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9nC-jV-MUS" firstAttribute="top" secondItem="R0a-w2-s3c" secondAttribute="topMargin" constant="27" id="0MB-cb-MiI"/>
+                                            <constraint firstAttribute="bottom" secondItem="Fij-SN-tYf" secondAttribute="bottom" id="8Bw-D7-AdI"/>
+                                            <constraint firstItem="9nC-jV-MUS" firstAttribute="leading" secondItem="R0a-w2-s3c" secondAttribute="leadingMargin" constant="27" id="HOG-OA-ZJb"/>
+                                            <constraint firstItem="Fij-SN-tYf" firstAttribute="top" secondItem="R0a-w2-s3c" secondAttribute="top" id="cCc-c0-rfy"/>
+                                            <constraint firstItem="Fij-SN-tYf" firstAttribute="leading" secondItem="R0a-w2-s3c" secondAttribute="leading" id="cQ2-ng-083"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="9nC-jV-MUS" secondAttribute="trailing" constant="27" id="iWr-Zq-7BM"/>
+                                            <constraint firstAttribute="trailing" secondItem="Fij-SN-tYf" secondAttribute="trailing" id="jcH-dc-4dj"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="9nC-jV-MUS" secondAttribute="bottom" constant="27" id="jtj-SK-Nzf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="Fij-SN-tYf" id="ut8-nd-5VH"/>
+                                            <outlet property="spinner" destination="9nC-jV-MUS" id="Iib-gA-NpQ"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
