@@ -18,6 +18,7 @@
 		30151437223B1839000626D5 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30151436223B1839000626D5 /* FlickrAPI.swift */; };
 		30151439223B1CDA000626D5 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30151438223B1CDA000626D5 /* PhotoStore.swift */; };
 		3015143B223B1F00000626D5 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3015143A223B1F00000626D5 /* Photo.swift */; };
+		30FB723A2244510F0099DA71 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FB72392244510F0099DA71 /* PhotoDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		30151436223B1839000626D5 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
 		30151438223B1CDA000626D5 /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
 		3015143A223B1F00000626D5 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		30FB72392244510F0099DA71 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				30151436223B1839000626D5 /* FlickrAPI.swift */,
 				30151438223B1CDA000626D5 /* PhotoStore.swift */,
 				3015143A223B1F00000626D5 /* Photo.swift */,
+				30FB72392244510F0099DA71 /* PhotoDataSource.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3015143B223B1F00000626D5 /* Photo.swift in Sources */,
+				30FB723A2244510F0099DA71 /* PhotoDataSource.swift in Sources */,
 				30151439223B1CDA000626D5 /* PhotoStore.swift in Sources */,
 				30151435223B15BD000626D5 /* PhotosViewController.swift in Sources */,
 				30151404223B15A8000626D5 /* AppDelegate.swift in Sources */,
